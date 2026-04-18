@@ -1,0 +1,42 @@
+version = 2
+
+[[blocks]]
+type = "prompt"
+alignment = "left"
+
+  [[blocks.segments]]
+  type = "text"
+  style = "plain"
+  foreground = "red"
+  template = "{{ .Path }}"
+
+  [[blocks.segments]]
+  type = "text"
+  style = "plain"                                                           foreground = "red"
+  template = "]\n"   # <-- THIS is the key                                
+[[blocks]]
+type = "prompt"
+alignment = "left"
+
+  [[blocks.segments]]
+  type = "text"
+  style = "plain"
+  foreground = "red"
+  template = "└──╼ "                                                      
+  [[blocks.segments]]
+  type = "text"
+  style = "plain"
+  foreground = "red"
+  template = "❯"
+
+  [[blocks.segments]]
+  type = "text"
+  style = "plain"
+  foreground = "blue"
+  template = "❯"
+
+  [[blocks.segments]]
+  type = "text"
+  style = "plain"
+  foreground = "darkGray"
+  template = "❯ "
